@@ -4,6 +4,9 @@ export const sql = postgres(process.env.POSTGRES_URL, {
   ssl: 'allow',
 });
 
+// Configure the output directory for Next.js builds
+export const outDir = '.next'; // Change this if you have a different output directory
+
 const nextConfig = {
   experimental: {
     ppr: false,
