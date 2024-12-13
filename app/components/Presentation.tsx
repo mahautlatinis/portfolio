@@ -1,5 +1,9 @@
 import Link from 'next/link';
 
+/* 
+TODO: à faire
+*/
+
 export default function Presentation() {
     return (
         <>
@@ -8,7 +12,7 @@ export default function Presentation() {
             </h1>
             <p className="prose prose-neutral dark:prose-invert">
                 {`I'm a French software engineer based in Versailles and a bubbly mother. I currently `}
-                <Link href="/work">work</Link>
+                {/* <Link href="/work">work</Link> */}
                 {` as Backend Engineer and Product Builder at Greenly.`}
                 <span className="not-prose">
                 </span>

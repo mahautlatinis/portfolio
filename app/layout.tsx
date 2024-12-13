@@ -1,5 +1,6 @@
 
 import './global.css';
+
 import NextUIWrapper from './wrappers/NextUIWrapper';
 import type { Metadata } from 'next';
 import { GeistSans } from 'geist/font/sans';
@@ -11,7 +12,7 @@ TODO: a revoir
 */
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://mahautlatinis.io'),
+  metadataBase: new URL('https://mahautlatinis.fr'),
   title: {
     default: 'Mahaut Latinis',
     template: '%s | Mahaut Latinis',
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Mahaut Latinis',
     description: 'Portfolio',
-    url: 'https://mahautlatinis.io',
+    url: 'https://mahautlatinis.fr',
     siteName: 'Mahaut Latinis',
     locale: 'fr_FR',
     type: 'website',
@@ -59,16 +60,10 @@ export default function RootLayout({
       )}
     >
       <head>
-      <link
-          rel="alternate"
-          type="application/rss+xml"
-          title="Flux RSS de Mahaut"
-          href="/api/rss"
-        />
       </head>
-        <body className="antialiased max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
+        <body /*className="antialiased max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto text-center"*/ >
           <NextUIWrapper>
-            <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+            <main /*className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0"*/>
               <Navbar />
               {children}
             </main> 

@@ -3,7 +3,7 @@ import typography from '@tailwindcss/typography';
 import { nextui } from '@nextui-org/react';
 
 export default {
-  content: ['./app/**/*.{ts,tsx}', './content/**/*.mdx', './public/**/*.svg'],
+  content: ['./app/**/*.{ts,tsx}', './content/**/*.mdx', './public/**/*.svg', './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       fontFamily: {
@@ -12,5 +12,6 @@ export default {
       },
     },
   },
-  plugins: [],
+  darkMode: "class",
+  plugins: [nextui()],
 } satisfies Config;

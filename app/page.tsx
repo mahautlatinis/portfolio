@@ -1,12 +1,13 @@
 
-import HomeImages from './components/HomeImages';
-import MediumArticles from './components/MediumArticles';
+import Articles from './articles/page';
 
 export default function Page() {
+  /* 
+  TODO: voir balises html telles que section etc 
+   */
   return (
-    <section>
-      <MediumArticles />
-      <HomeImages />
-    </section>
+    <>
+      <Articles />
+    </>
   );
 }
