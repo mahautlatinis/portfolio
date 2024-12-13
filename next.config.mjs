@@ -1,12 +1,12 @@
 import postgres from 'postgres';
 
 export const sql = postgres(process.env.POSTGRES_URL, {
-  ssl: 'allow',
+  ssl: 'true',
 });
 
 const nextConfig = {
   experimental: {
-    ppr: true,
+    ppr: false,
   },
   async redirects() {
     if (!process.env.POSTGRES_URL) {
