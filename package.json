@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",
-    "build": "next build",
-    "build-only": "next build",
+    "build": "next build --output public",
+    "build-only": "next build --output public",
     "start": "next start"
   },
   "dependencies": {
