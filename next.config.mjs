@@ -9,7 +9,7 @@ export const outDir = '.next'; // Change this if you have a different output dir
 
 const nextConfig = {
   experimental: {
-    ppr: false,
+    ppr: false, // Disable PPR to avoid the Vercel error
   },
   headers() {
     return [
