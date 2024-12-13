@@ -4,12 +4,25 @@ export const sql = postgres(process.env.POSTGRES_URL, {
   ssl: 'allow',
 });
 
-// Configure the output directory for Next.js builds
-export const outDir = '.next'; // Change this if you have a different output directory
-
 const nextConfig = {
   experimental: {
-    ppr: false, // Disable PPR to avoid the Vercel error
+    ppr: true,
+  },
+  async redirects() {
+    if (!process.env.POSTGRES_URL) {
+      return [];
+    }
+
+    let redirects = await sql`
+      SELECT source, destination, permanent
+      FROM redirects;
+    `;
+
+    return redirects.map(({ source, destination, permanent }) => ({
+      source,
+      destination,
+      permanent: !!permanent,
+    }));
   },
   headers() {
     return [
