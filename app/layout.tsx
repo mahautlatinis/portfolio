@@ -59,6 +59,12 @@ export default function RootLayout({
       )}
     >
       <head>
+      <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="Flux RSS de Mahaut"
+          href="/api/rss"
+        />
       </head>
         <body className="antialiased max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
           <NextUIWrapper>
