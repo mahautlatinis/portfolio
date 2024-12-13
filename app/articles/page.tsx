@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import {Chip} from "@nextui-org/react";
 
 interface Article {
   title: string;
@@ -10,7 +11,7 @@ interface Article {
   category: string[];
 }
 
-export default function MediumArticles() {
+export default function Articles() {
   const [articles, setArticles] = useState<Article[]>([]);
   const [error, setError] = useState<string | null>(null);
 
@@ -19,10 +20,9 @@ export default function MediumArticles() {
       try {
         const res = await fetch('/api/medium-rss');
         if (!res.ok) {
-          throw new Error('Erreur" lors de la récupération des articles.');
+          throw new Error('Erreur lors de la récupération des articles.');
         }
         const data = await res.json();
-        //console.log("data : ", data);
         setArticles(data);
       } catch (err: any) {
         setError(err.message);
@@ -36,22 +36,28 @@ export default function MediumArticles() {
     return <div>Erreur : {error}</div>;
   }
 
+  /* 
+  TODO: à corriger
+  */
+
   return (
-    <div>
-      <h2>Articles Medium</h2>
-      <ul>
+    <div className="p-10">
+      <h2>Articles</h2>
+      <ul className="flex flex-row overflow-x-auto lg:mx-auto text-center">
         {articles.map((article, index) => (
-            <li key={index} className="p-2">
+            <li key={index} className="flex-shrink-0 w-80 h-auto m-10">
               <a href={article.link} target="_blank" rel="noopener noreferrer">
                 <h3>{article.title}</h3>
               </a>
-              <p>{new Date(article.pubDate).toLocaleDateString()}</p>
-              {article.category.map((cat, element) => (
-                <ul key={element}>
-                  <p>{cat}</p>
-                </ul>
+              {/* TODO: ajouter images, améliorer style */}
+              {article.category.map((cat, index) => (
+                <Chip color="danger" key={cat.concat(index.toString())} classNames={{
+                  base: "border-small m-1",
+                  content: "drop-shadow shadow-black text-black text-xs",
+                }} variant="bordered">
+                  {cat.toUpperCase()}
+                </Chip>
               ))}
-              {/* <p dangerouslySetInnerHTML={{ __html: article.description }} /> */}
             </li>
         ))}
       </ul>

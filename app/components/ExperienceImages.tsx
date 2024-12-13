@@ -6,6 +6,10 @@ import mahaut from 'public/images/home/mahaut.png';
 import peers from 'public/images/home/greenly/peers.png'
 import shorthair from 'public/images/home/42/updated-42.jpg'
 
+/*
+TODO: à améliorer 
+*/
+
 export default function ExperienceImages() {
     return (<div className="my-8 columns-2 gap-4 sm:columns-3">
         <div className="relative mb-4 h-40">

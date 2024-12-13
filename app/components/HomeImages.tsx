@@ -10,6 +10,9 @@ import printf from 'public/images/home/42/printf/printf.png'
 import philosophers from 'public/images/home/42/philosophers/philosophers.png'
 import ftIrc from 'public/images/home/42/ft_irc/motd.png'
 
+/*
+TODO: à améliorer 
+*/
 
 export default function HomeImages() {
     return (
