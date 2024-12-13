@@ -8,22 +8,6 @@ const nextConfig = {
   experimental: {
     ppr: false,
   },
-  async redirects() {
-    if (!process.env.POSTGRES_URL) {
-      return [];
-    }
-
-    let redirects = await sql`
-      SELECT source, destination, permanent
-      FROM redirects;
-    `;
-
-    return redirects.map(({ source, destination, permanent }) => ({
-      source,
-      destination,
-      permanent: !!permanent,
-    }));
-  },
   headers() {
     return [
       {
