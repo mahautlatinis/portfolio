@@ -53,9 +53,9 @@ export default function Articles() {
               {article.category.map((cat, index) => (
                 <Chip color="danger" key={cat.concat(index.toString())} classNames={{
                   base: "border-small m-1",
-                  content: "drop-shadow shadow-black text-black",
+                  content: "drop-shadow shadow-black text-black text-xs",
                 }} variant="bordered">
-                  {cat}
+                  {cat.toUpperCase()}
                 </Chip>
               ))}
             </li>
