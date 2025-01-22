@@ -1,0 +1,15 @@
+{
+  "status": 200,
+  "headers": {
+    "link": "</_next/static/media/ec1a1eae803b668e-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/f980ec13b5b5e554.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\"",
+    "x-nextjs-stale-time": "4294967294",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/work/layout,_N_T_/work/page,_N_T_/work"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/work/__PAGE__.efee7448c3236d86684d828503ec092acb6d7a820229f107f3cd98e9af5d78e4",
+    "/work.10910087de24bfcabe854fda62b5023a61fe531705043b9979fdf00f12c4c0ec",
+    "/"
+  ]
+}

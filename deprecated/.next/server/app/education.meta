@@ -1,0 +1,15 @@
+{
+  "status": 200,
+  "headers": {
+    "link": "</_next/static/media/ec1a1eae803b668e-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/f980ec13b5b5e554.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\"",
+    "x-nextjs-stale-time": "4294967294",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/education/layout,_N_T_/education/page,_N_T_/education"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/education/__PAGE__.24debe1fa1fa32e57adaedcb3f9259139960e8f0ea29310476449a4d197036b3",
+    "/education.10910087de24bfcabe854fda62b5023a61fe531705043b9979fdf00f12c4c0ec",
+    "/"
+  ]
+}

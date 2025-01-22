@@ -1,0 +1,15 @@
+{
+  "status": 404,
+  "headers": {
+    "link": "</_next/static/media/ec1a1eae803b668e-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/f980ec13b5b5e554.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\"",
+    "x-nextjs-stale-time": "4294967294",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/_not-found/layout,_N_T_/_not-found/page,_N_T_/_not-found"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_not-found/__PAGE__.20e51a667cd10ba32cb6080e2742863c5e2fe383efd22e87bb6ed3387cd87d88",
+    "/_not-found.10910087de24bfcabe854fda62b5023a61fe531705043b9979fdf00f12c4c0ec",
+    "/"
+  ]
+}

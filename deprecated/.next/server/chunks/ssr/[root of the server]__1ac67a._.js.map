@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///Users/mahautlatinis/Desktop/portfolio/app/wrappers/NextUIWrapper.tsx"],"sourcesContent":["\"use client\";\n\nimport { NextUIProvider } from \"@nextui-org/react\";\n\nconst theme = {\n  type: \"light\",\n};\n\nexport default function NextUIWrapper({ children }: { children: React.ReactNode }) {\n  return <NextUIProvider>{children}</NextUIProvider>;\n}\n"],"names":[],"mappings":";;;;AAEA;AAFA;;;AAIA,MAAM,QAAQ;IACZ,MAAM;AACR;AAEe,SAAS,cAAc,EAAE,QAAQ,EAAiC;IAC/E,qBAAO,8OAAC,uKAAA,CAAA,iBAAc;kBAAE;;;;;;AAC1B"}},
+    {"offset": {"line": 35, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

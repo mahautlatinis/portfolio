@@ -1,0 +1,15 @@
+{
+  "status": 200,
+  "headers": {
+    "link": "</_next/static/media/ec1a1eae803b668e-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/f980ec13b5b5e554.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\"",
+    "x-nextjs-stale-time": "4294967294",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/hobbies/layout,_N_T_/hobbies/page,_N_T_/hobbies"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/hobbies/__PAGE__.d6dc33b464371e4d8db8b19612942bef7f1e5ed45dd5a09d7fca63ef127a84c6",
+    "/hobbies.10910087de24bfcabe854fda62b5023a61fe531705043b9979fdf00f12c4c0ec",
+    "/"
+  ]
+}
