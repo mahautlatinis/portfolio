@@ -2,7 +2,9 @@ import "./index.css";
 import * as React from "react";
 import { IntlProvider } from "react-intl";
 import Navbar from "./components/Navbar";
-("");
+import Hero from "./components/Hero/Hero";
+import Carousel from "./components/Carousel/Carousel";
+
 import messages_en from "./translations/en.json";
 import messages_fr from "./translations/fr.json";
 
@@ -21,6 +23,8 @@ function App() {
       locale={navigator.language}
       messages={messages[language]}
     >
+      <Hero />
+      {/* <Carousel /> */}
       <Navbar />
     </IntlProvider>
   );
