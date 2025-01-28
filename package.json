@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "extract": "formatjs extract"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
@@ -16,10 +17,12 @@
     "lucide-react": "^0.474.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-intl": "^7.1.5",
     "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
+    "@formatjs/cli": "^6.5.1",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.17.0",
