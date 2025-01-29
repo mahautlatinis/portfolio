@@ -9,6 +9,7 @@ import Carousel from "./components/Carousel/Carousel";
 
 import messages_en from "./translations/en.json";
 import messages_fr from "./translations/fr.json";
+import DeviceMockup from "./components/DeviceMockup/DeviceMockup";
 
 function App() {
   const messages = {
@@ -28,6 +29,7 @@ function App() {
       <Navbar />
       <MovingNavbar />
       <Drawer />
+      <DeviceMockup />
       <Hero />
       <Hero />
       <Hero />
