@@ -4,6 +4,7 @@ import { IntlProvider } from "react-intl";
 import Navbar from "./components/Navbar/Navbar";
 import MovingNavbar from "./components/Navbar/MovingNavbar";
 import Hero from "./components/Hero/Hero";
+import Drawer from "./components/Drawer/Drawer";
 import Carousel from "./components/Carousel/Carousel";
 
 import messages_en from "./translations/en.json";
@@ -26,6 +27,7 @@ function App() {
     >
       <Navbar />
       <MovingNavbar />
+      <Drawer />
       <Hero />
       <Hero />
       <Hero />
