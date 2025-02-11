@@ -36,6 +36,7 @@ function App() {
       locale={navigator.language}
       messages={messages[language]}
     >
+      <h1 className="unifrakturmaguntia-regular">Mahaut Latinis</h1>
       <Navbar />
       <Avatar />
       <Badge />
