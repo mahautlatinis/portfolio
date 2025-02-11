@@ -6,10 +6,18 @@ import MovingNavbar from "./components/Navbar/MovingNavbar";
 import Hero from "./components/Hero/Hero";
 import Drawer from "./components/Drawer/Drawer";
 import Carousel from "./components/Carousel/Carousel";
+import Footer from "./components/Footer/Footer";
+import Form from "./components/Form/Form";
 
 import messages_en from "./translations/en.json";
 import messages_fr from "./translations/fr.json";
-import DeviceMockup from "./components/DeviceMockup/DeviceMockup";
+import Gallery from "./components/Gallery/Gallery";
+import Accordion from "./components/Accordion/Accordion";
+import Avatar from "./components/Avatar/Avatar";
+import Badge from "./components/Badge/Badge";
+import Button from "./components/Button/Button";
+import SocialButtons from "./components/Button/SocialButtons";
+import Jumbotron from "./components/Jumbotron/Jumbotron";
 
 function App() {
   const messages = {
@@ -27,17 +35,19 @@ function App() {
       messages={messages[language]}
     >
       <Navbar />
+      <Avatar />
+      <Badge />
+      <Jumbotron />
+      <Button />
+      <SocialButtons />
       <MovingNavbar />
       <Drawer />
-      <DeviceMockup />
       <Hero />
-      <Hero />
-      <Hero />
-      <Hero />
-      <Hero />
-      <Hero />
-      <Hero />
-      {/* <Carousel /> */}
+      <Form />
+      <Gallery />
+      <Accordion />
+      <Carousel />
+      <Footer />
     </IntlProvider>
   );
 }
