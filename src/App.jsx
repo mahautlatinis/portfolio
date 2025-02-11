@@ -18,6 +18,8 @@ import Badge from "./components/Badge/Badge";
 import Button from "./components/Button/Button";
 import SocialButtons from "./components/Button/SocialButtons";
 import Jumbotron from "./components/Jumbotron/Jumbotron";
+import Timeline from "./components/Timeline/Timeline";
+import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
 
 function App() {
   const messages = {
@@ -37,6 +39,8 @@ function App() {
       <Navbar />
       <Avatar />
       <Badge />
+      <VideoPlayer />
+      <Timeline />
       <Jumbotron />
       <Button />
       <SocialButtons />
