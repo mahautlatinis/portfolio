@@ -20,8 +20,8 @@ import SocialButtons from "./components/Button/SocialButtons";
 import Jumbotron from "./components/Jumbotron/Jumbotron";
 import Timeline from "./components/Timeline/Timeline";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
-import AnimatedImage from "./components/Animations/AnimatedImage";
 import PageTransition from "./components/Animations/PageTransition";
+import { SparklyText } from "./sparkly-text";
 
 function App() {
   const messages = {
@@ -39,8 +39,10 @@ function App() {
       messages={messages[language]}
     >
       <h1 className="unifrakturmaguntia-regular">Mahaut Latinis</h1>
+      <sparkly-text style={{ "--sparkly-text-color": "rainbow" }}>
+        Hello World
+      </sparkly-text>
       <PageTransition />
-      {/* <AnimatedImage /> */}
       <Navbar />
       <Avatar />
       <Badge />
