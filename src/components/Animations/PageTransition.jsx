@@ -1,11 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-export default function AnimatedImage() {
+export default function PageTransition() {
   const blueRef = useRef(null);
   const whiteRef = useRef(null);
   const redRef = useRef(null);
-  const imageRef = useRef(null);
 
   useEffect(() => {
     gsap.to(blueRef.current, {
@@ -30,27 +29,14 @@ export default function AnimatedImage() {
   return (
     <div
       style={{
-        position: "relative",
-        width: "400px",
-        height: "400px",
-        margin: "auto",
+        position: "fixed",
+        width: "100vw",
+        height: "100vh",
+        top: 0,
+        left: 0,
         overflow: "hidden",
-        //borderRadius: "100%", // Ajout du border-radius pour rendre circulaire
       }}
     >
-      <img
-        ref={imageRef}
-        src="/public/ml.jpeg"
-        alt="Image à afficher"
-        style={{
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          position: "absolute",
-          top: 0,
-          left: 0,
-        }}
-      />
       <div
         ref={redRef}
         style={{
