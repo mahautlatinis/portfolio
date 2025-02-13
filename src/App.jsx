@@ -20,6 +20,7 @@ import SocialButtons from "./components/Button/SocialButtons";
 import Jumbotron from "./components/Jumbotron/Jumbotron";
 import Timeline from "./components/Timeline/Timeline";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
+import AnimatedImage from "./components/Animations/AnimatedImage";
 
 function App() {
   const messages = {
@@ -37,6 +38,7 @@ function App() {
       messages={messages[language]}
     >
       <h1 className="unifrakturmaguntia-regular">Mahaut Latinis</h1>
+      <AnimatedImage />
       <Navbar />
       <Avatar />
       <Badge />
